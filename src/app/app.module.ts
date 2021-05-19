@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FacebookShareComponent } from './footer/facebook-share/facebook-share.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     PageNotFoundComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    FacebookShareComponent
   ],
   imports: [
     BrowserModule,
