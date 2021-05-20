@@ -2,13 +2,23 @@
 
 .order{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
-    // background-image: url(../../../assets/img_home/Senza-titolo-2-prova.png);
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    background-color: rgb(250, 190, 223);
+    background-color: rgb(253, 181, 221);
+   
 
+}
+
+.panino{
+    background-image: url(../../../assets/img_home/panino-spongebob.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 200px;
+    margin: 50px 50px 50px 150px;
 }
 
 .text{
@@ -18,6 +28,7 @@
     padding-right: 200px;
     margin: 50px 50px 50px 150px;
 }
+
 
 .title{
     font-family: sans-serif;
