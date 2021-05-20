@@ -9,10 +9,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { FacebookShareComponent } from './footer/facebook-share/facebook-share.component';
 import { TwitterShareComponent } from './footer/twitter-share/twitter-share.component';
 import { InstagramShareComponent } from './footer/instagram-share/instagram-share.component';
 
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatRippleModule } from '@angular/material/core';
+
+
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +36,11 @@ import { InstagramShareComponent } from './footer/instagram-share/instagram-shar
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatIconModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

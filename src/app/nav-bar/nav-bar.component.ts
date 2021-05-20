@@ -12,4 +12,6 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  colored : string = "rgb(255, 255, 255, 0.8)";
+
 }
