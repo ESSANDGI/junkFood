@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FacebookShareComponent } from './footer/facebook-share/facebook-share.component';
 import { TwitterShareComponent } from './footer/twitter-share/twitter-share.component';
+import { InstagramShareComponent } from './footer/instagram-share/instagram-share.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TwitterShareComponent } from './footer/twitter-share/twitter-share.comp
     NavBarComponent,
     FooterComponent,
     FacebookShareComponent,
-    TwitterShareComponent
+    TwitterShareComponent,
+    InstagramShareComponent
   ],
   imports: [
     BrowserModule,
