@@ -1,7 +1,12 @@
-.contenitore-geerale{
-    background-color: gray;
+h1{
+    background-color: grey;
 }
 
-.carosello{
-    background-color: lightblue;
+:host {
+    height: 110%; 
+    width: 100%;
+    background-color: green;
+    border: 2px solid black;
+    display: block;
+    // position: fixed;
 }
