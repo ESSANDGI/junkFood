@@ -14,6 +14,17 @@ import { PrimoSloganComponent } from './home/primo-slogan/primo-slogan.component
 import { RigaDivisaIn2Component } from './home/riga-divisa-in2/riga-divisa-in2.component';
 
 
+import { FacebookShareComponent } from './footer/facebook-share/facebook-share.component';
+import { TwitterShareComponent } from './footer/twitter-share/twitter-share.component';
+import { InstagramShareComponent } from './footer/instagram-share/instagram-share.component';
+
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatRippleModule } from '@angular/material/core';
+
+
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,13 +34,20 @@ import { RigaDivisaIn2Component } from './home/riga-divisa-in2/riga-divisa-in2.c
     FooterComponent,
     CarouselComponent,
     PrimoSloganComponent,
-    RigaDivisaIn2Component
+    RigaDivisaIn2Component,
+    FacebookShareComponent,
+    TwitterShareComponent,
+    InstagramShareComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatIconModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
