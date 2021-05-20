@@ -10,6 +10,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FacebookShareComponent } from './footer/facebook-share/facebook-share.component';
+import { TwitterShareComponent } from './footer/twitter-share/twitter-share.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FacebookShareComponent } from './footer/facebook-share/facebook-share.c
     PageNotFoundComponent,
     NavBarComponent,
     FooterComponent,
-    FacebookShareComponent
+    FacebookShareComponent,
+    TwitterShareComponent
   ],
   imports: [
     BrowserModule,
