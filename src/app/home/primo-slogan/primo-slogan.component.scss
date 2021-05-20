@@ -4,29 +4,24 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: rgb(253, 181, 221);
-   
-
-}
-
-.panino{
-    background-image: url(../../../assets/img_home/panino-spongebob.png);
-    background-size: cover;
+    height: 700px;
+    // background-color: rgb(253, 181, 221);
+    background-image: url(../../../assets/img_home/burger.jpg);
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding-right: 200px;
-    margin: 50px 50px 50px 150px;
+
 }
 
+
+
 .text{
+    color: white;
     display: flex;
     flex-direction: column;
     width: 50%;
     padding-right: 200px;
-    margin: 50px 50px 50px 150px;
+    margin: 150px 50px 50px 150px;
 }
 
 
@@ -34,7 +29,7 @@
     font-family: sans-serif;
     font-size: 50px;
     line-height: 50px;
-    color: black;
+    
 }
 
 .first-message{
@@ -47,7 +42,7 @@
     display: flex;
     width: 200px;
     height: 50px;
-    background-color: black;
+    background-color: rgb(65, 193, 253);
     border-radius: 5px;
     margin-top: 20px;
     color: white;

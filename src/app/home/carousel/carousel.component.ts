@@ -13,6 +13,6 @@ export class CarouselComponent implements OnInit {
   }
 
   
-  images = ['sulu-burger1.jpg', 'cheeseburger.jpg', 'fuocoburger.jpg'].map((n) => `../assets/img_home/${n}`);
+  images = ['sulu-burger1.jpg', 'burger.jpg', 'fuocoburger.jpg'].map((n) => `../assets/img_home/${n}`);
   
 }
