@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    display: flex;
+    height: 50%;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: rgb(116, 252, 116);
+}
+.col{
+    flex-basis: 50%;
+}

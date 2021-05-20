@@ -9,6 +9,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselComponent } from './home/carousel/carousel.component';
+import { PrimoSloganComponent } from './home/primo-slogan/primo-slogan.component';
+import { RigaDivisaIn2Component } from './home/riga-divisa-in2/riga-divisa-in2.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +20,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     PageNotFoundComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    CarouselComponent,
+    PrimoSloganComponent,
+    RigaDivisaIn2Component
   ],
   imports: [
     BrowserModule,
