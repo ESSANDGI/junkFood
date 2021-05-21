@@ -22,6 +22,9 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatRippleModule } from '@angular/material/core';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { ProdottiComponent } from './prodotti/prodotti.component';
 
 
  
@@ -37,7 +40,9 @@ import { MatRippleModule } from '@angular/material/core';
     RigaDivisaIn2Component,
     FacebookShareComponent,
     TwitterShareComponent,
-    InstagramShareComponent
+    InstagramShareComponent,
+    SideNavComponent,
+    ProdottiComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +52,8 @@ import { MatRippleModule } from '@angular/material/core';
     MatMenuModule,
     MatButtonModule,
     MatIconModule,
-    MatRippleModule
+    MatRippleModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

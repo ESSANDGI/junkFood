@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProdottiComponent } from './prodotti/prodotti.component';
+
 
 const routes: Routes = [
   {
@@ -9,6 +11,11 @@ const routes: Routes = [
   path: 'homepage',
   component: HomeComponent
   },
+  {
+    // creiamo un oggetto di rotta
+    path: 'prodotti',
+    component: ProdottiComponent
+    },
   {
     path: '', //Redirect all'homepage in caso di path vuoto
     redirectTo: '/homepage',

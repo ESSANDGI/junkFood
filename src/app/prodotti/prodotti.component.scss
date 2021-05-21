@@ -1,0 +1,15 @@
+.container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    grid-template-columns: repeat(4, 270px);
+    grid-template-rows: repeat(5, 270px) ;
+}
+
+.prodotto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
