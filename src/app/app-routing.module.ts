@@ -2,12 +2,17 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
 
 const routes: Routes = [
   {
   // creiamo un oggetto di rotta
   path: 'homepage',
   component: HomeComponent
+  },{
+  //creo rotta per chi-siamo 
+  path: 'chi-siamo',
+  component: ChiSiamoComponent
   },
   {
     path: '', //Redirect all'homepage in caso di path vuoto
