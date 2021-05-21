@@ -5,6 +5,8 @@
     height: 100%;
     grid-template-columns: repeat(4, 270px);
     grid-template-rows: repeat(5, 270px) ;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .prodotto{
@@ -13,3 +15,102 @@
     align-items: center;
 }
 
+.prodotto:first-child{
+    background-image: url(img/121_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(2){
+    background-image: url(img/123_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(3){
+    background-image: url(img/898_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(4){
+    background-image: url(img/897_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(5){
+    background-image: url(img/129_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(6){
+    background-image: url(img/130_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(7){
+    background-image: url(img/305_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(8){
+    background-image: url(img/128_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(9){
+    background-image: url(img/125_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(10){
+    background-image: url(img/896_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(11){
+    background-image: url(img/893_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(12){
+    background-image: url(img/124_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(13){
+    background-image: url(img/131_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(14){
+    background-image: url(img/127_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(15){
+    background-image: url(img/895_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(16){
+    background-image: url(img/126_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(17){
+    background-image: url(img/894_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(18){
+    background-image: url(img/1236_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(19){
+    background-image: url(img/121_medium_US_en.png);
+    background-position: center;
+}
+
+.prodotto:nth-child(20){
+    background-image: url(img/896_medium_US_en.png);
+    background-position: center;
+}
