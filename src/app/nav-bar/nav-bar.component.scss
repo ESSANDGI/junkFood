@@ -17,28 +17,32 @@
     flex-direction: row;
     align-items: center;
     margin-right: 50px;
+    height: 100%;
 }
 
 .menuButton {
     cursor: pointer;
     width: 200px;
-    height: 123px;
-    background-color: rgb(214, 103, 103);
+    height: 100%;
+    // background-color: #161a1d;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "burgerFont";
-    font-size: 2.1em;
+    font-size: 1.8em;
+    color: #ffffff;
 }
 
 .menuButton:hover {
-    background-color: rgb(109, 1, 1);
+    // background-color: #313131;
     // background-color: rgb(255, 255, 255);
-    color: white;
+    color: #161a1d;
+    text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
 }
 
 .cart {
     font-size: 2.5em;
+    color: white;
 }
 
 // .icon {
@@ -46,8 +50,8 @@
 // }
 
 img { //LOGO
-    width: 200px;
-    height: 120px;
+    width: 250px;
+    height: auto;
 }
 
 // button {
