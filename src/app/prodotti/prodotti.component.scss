@@ -106,11 +106,15 @@
 }
 
 .prodotto:nth-child(19){
-    background-image: url(img/121_medium_US_en.png);
+    background-image: url(img/lto_placeholder.png);
     background-position: center;
+    background-size: cover;
+    grid-column: span 2
+
 }
 
-.prodotto:nth-child(20){
-    background-image: url(img/896_medium_US_en.png);
-    background-position: center;
-}
+// .prodotto:nth-child(20){
+//     background-image: url(img/896_medium_US_en.png);
+//     // background-position: center;
+//     grid-column: span 2
+// }
