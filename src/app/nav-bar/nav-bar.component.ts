@@ -10,8 +10,28 @@ export class NavBarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
+  }
+
+  changeToBlood() {
+    let image = document.getElementById("logo") as HTMLImageElement;
+
+    image.src = "../../assets/menu-img/logo-bianco-e-nero-sangue.png";
+
+    // img.src = "../../assets/menu-img/logo-bianco-e-nero-sangue.png";
+
+  }
+
+  changeToNormal() {
+    let image = document.getElementById("logo") as HTMLImageElement;
+
+    image.src = "../../assets/menu-img/logo-bianco-e-nero.png";
+
+    // img.src = "../../assets/menu-img/logo-bianco-e-nero-sangue.png";
+
   }
 
   // colored : string = "rgb(102, 7, 8, 0.6)";
+
 
 }
