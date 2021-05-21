@@ -1,13 +1,18 @@
-h1{
-    background-color: grey;
-}
+//IMPEDISCE DI DARE ALLA HOME WIDTH MASSIMA
+// .container{
+    
+//     width: 100%;
+//     height: 100%;
+//     background-color: lightcoral;
+    
+// }
 
-:host {
-    // height: 110%; 
-    width: 100%;
-    margin-top: 130px;
-    background-color: green;
-    border: 2px solid black;
-    display: block;
-    // position: fixed;
-}
+// :host {
+//     // height: 100%;
+//     width: 100%;
+//     margin-top: 130px;
+//     // background-color: green;
+//     border: 2px solid black;
+//     display: block;
+//     // position: fixed;
+// }

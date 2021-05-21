@@ -1,0 +1,27 @@
+.not-found{
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    background-image: url("../../assets/notFound/dodo-extinct.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testo-404{
+    width: 50%;
+    padding: 7%;
+}
+
+p{
+    color:azure
+}
+
+:host {
+    height: auto; 
+    width: 100vw;
+    margin-top: 129px;
+    // background-color: green;
+    border: 2px solid black;
+    display: block;
+    // position: fixed;
+}
