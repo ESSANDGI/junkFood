@@ -17,11 +17,13 @@ import { RigaDivisaIn2Component } from './home/riga-divisa-in2/riga-divisa-in2.c
 import { FacebookShareComponent } from './footer/facebook-share/facebook-share.component';
 import { TwitterShareComponent } from './footer/twitter-share/twitter-share.component';
 import { InstagramShareComponent } from './footer/instagram-share/instagram-share.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatRippleModule } from '@angular/material/core';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
  
@@ -37,7 +39,8 @@ import { MatRippleModule } from '@angular/material/core';
     RigaDivisaIn2Component,
     FacebookShareComponent,
     TwitterShareComponent,
-    InstagramShareComponent
+    InstagramShareComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,8 @@ import { MatRippleModule } from '@angular/material/core';
     MatMenuModule,
     MatButtonModule,
     MatIconModule,
-    MatRippleModule
+    MatRippleModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
