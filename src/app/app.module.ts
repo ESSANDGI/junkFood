@@ -23,6 +23,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatRippleModule } from '@angular/material/core';
 import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
+import { ProdottiComponent } from './prodotti/prodotti.component';
 
 
  
@@ -39,7 +40,8 @@ import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
     FacebookShareComponent,
     TwitterShareComponent,
     InstagramShareComponent,
-    ChiSiamoComponent
+    ChiSiamoComponent,
+    ProdottiComponent
   ],
   imports: [
     BrowserModule,
