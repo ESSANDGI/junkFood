@@ -22,6 +22,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatRippleModule } from '@angular/material/core';
+import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
 
 
  
@@ -37,7 +38,8 @@ import { MatRippleModule } from '@angular/material/core';
     RigaDivisaIn2Component,
     FacebookShareComponent,
     TwitterShareComponent,
-    InstagramShareComponent
+    InstagramShareComponent,
+    ChiSiamoComponent
   ],
   imports: [
     BrowserModule,
