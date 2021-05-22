@@ -12,10 +12,11 @@
     width: 20%;
 }
 
-.titolo-e-prodotti{
+.div-titolo-e-prodotti{
     width: 80%;
     display: flex;
     flex-direction:column;
+    margin-left: 3px;
 }
 .titolo{
     width: 100%;
@@ -32,6 +33,30 @@
     margin-bottom: 2px;
 }
 
+
+.div-prodotto{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width:20%;
+    border: solid;
+    border-radius: 20%;
+    border-color: chocolate;
+    margin: 2px;
+}
+
+.nome-prodotto{
+    margin: 0 auto;
+    margin-bottom: -10px;
+}
+
+img{
+    width: 100%;
+}
+
 .bottone-aggiungi{
-    background-color: #E5383B;
+    width: 60%;
+    background-color: chocolate;
+    margin: 0 auto;
+    margin-bottom: 2px;
 }
