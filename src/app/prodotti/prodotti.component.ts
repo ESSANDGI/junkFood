@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class ProdottiComponent implements OnInit {
 
   constructor() { }
-
+  
+  
   ngOnInit(): void {
+    const pathForImages : string = "../../assets/prodotti/";
+    const imagesNameDirectory  = ["bibite/","insalate/","panini/","salse/","sfiziosita/"];
+    
   }
 
 }
