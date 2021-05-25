@@ -2,7 +2,7 @@
 <div class="header">
    
     <div class="icon">
-        <img src="../../assets/menu-img/logo-bianco-e-nero.png" alt="logo" routerLink="/homepage">
+        <img (mouseenter)="changeToBlood()" (mouseleave)="changeToNormal()" src="../../assets/menu-img/logo-bianco-e-nero.png" alt="logo" id="logo" routerLink="/homepage">
     </div>
 
     <div class="menu">
@@ -10,7 +10,7 @@
         <div class="menuButton" matRipple [matRippleCentered]="true"> PRODOTTI </div>
         <div class="menuButton" matRipple [matRippleCentered]="true"> CONTATTACI </div>
         <div class="menuButton" matRipple [matRippleCentered]="true"> TROVACI </div>
-        <button mat-icon-button color="black" aria-label="Example icon button with a plus one icon">
+        <button class="cart-cont" mat-fab color="black" aria-label="Example icon button with a plus one icon"> <!--(click)="drawer.toggle()"-->
             <mat-icon class="cart">shopping_cart</mat-icon>
         </button>
     </div>
