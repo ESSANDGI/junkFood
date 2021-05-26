@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Prodotto } from '../prodotto';
 import { PRODOTTI } from '../Mock_elencoProdotti';
+import { CATEGORIE } from '../Mock_categorieProdotti';
 
 @Component({
   selector: 'app-prodotti',
@@ -11,6 +11,7 @@ export class ProdottiComponent implements OnInit {
 
   constructor() { }
   
+  Mock_ElencoCategorie = CATEGORIE;
   Mock_ElencoProdotti = PRODOTTI;
 
   ngOnInit(): void {
