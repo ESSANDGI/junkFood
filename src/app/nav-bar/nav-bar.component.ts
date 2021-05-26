@@ -9,6 +9,8 @@ export class NavBarComponent implements OnInit {
 
   constructor() { }
 
+
+
   ngOnInit(): void {
   }
 
@@ -27,6 +29,15 @@ export class NavBarComponent implements OnInit {
   // showSideNav() {
 
   // }
+
+  /*//Nel momento in cui l'utente aggiunge al carrello un prodotto richiama questa funzione la quale visualizza il badge sull'icona carrello
+    toggleCartBadge() {
+
+
+
+    }
+  
+  */
 
 
 
