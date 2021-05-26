@@ -1,7 +1,18 @@
-<!-- con il codice sotto la visualizzazione dei bottoni è dinamica in base a quanti 
+<!-- con il codice sotto la visualizzazione dei bottoni per le categorie è dinamica in base a quanti 
 elementi sono contenuti in Mock_ElencoCategorie -->
 <div class="div-elenco-categorie">
-    <button class="button-categoria" *ngFor="let categoria of Mock_ElencoCategorie">
+    <button class="button-seleziona-categoria" *ngFor="let categoria of Mock_ElencoCategorie">
         <span class="badge">{{categoria}}</span> 
     </button>
+</div>
+
+<!-- con il codice sotto la visualizzazione dei prodotti è dinamica in base a quanti sono i prodotti 
+presenti in Mock_ElencoProdotti -->
+<div class="div-elenco-prodotti">
+    <div class="div-prodotto" *ngFor="let prodotto of Mock_ElencoProdotti" >
+        <img [src]="prodotto.getBlob()" [alt]="prodotto.getName()">
+        <button class="button-aggiungi-prodotto">
+            <span class="badge">{{prodotto.getName()}}</span> 
+        </button>
+    </div>
 </div>
