@@ -11,8 +11,6 @@ export class ProdottiComponent implements OnInit {
   
   
   ngOnInit(): void {
-    const pathForImages : string = "../../assets/prodotti/";
-    const imagesNameDirectory  = ["bibite/","insalate/","panini/","salse/","sfiziosita/"];
     
   }
 
