@@ -1,2 +1,5 @@
-<h1>{{myFakeData[0].getName()}} ciao</h1>
-<h2>Cia</h2>
+<ul class="prodotti">
+    <button *ngFor="let prodotto of Mock_ElencoProdotti">
+        <span class="badge">{{prodotto.getName()}}</span> 
+    </button>
+</ul>

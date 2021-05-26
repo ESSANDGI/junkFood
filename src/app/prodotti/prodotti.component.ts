@@ -11,7 +11,7 @@ export class ProdottiComponent implements OnInit {
 
   constructor() { }
   
-  myFakeData = PRODOTTI;
+  Mock_ElencoProdotti = PRODOTTI;
 
   ngOnInit(): void {
     
