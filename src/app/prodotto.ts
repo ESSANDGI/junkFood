@@ -1,14 +1,14 @@
 //voglio che la classe sia rappresentata come:
 
-export class Prodotti{
-    constructor(private name: string, private blob: Blob, private prezzo:number){}
+export class Prodotto{
+    constructor(private name: string, private urlPath: string, private prezzo:number){}
 
     getPrezzo(){
         return this.prezzo;
     }
 
     getBlob(){
-        return this.blob;
+        return this.urlPath;
     }
 
     getName(){
