@@ -1,8 +1,12 @@
 
 <div class="container">
 
+    <!-- div uguale ad ogni prodotto -->
     <div *ngFor="let product of products">
         <p>{{product}}</p>
+        <button (click)="deleteProduct(product)">DELETE</button>
     </div>
+
+    <button (click)="addProduct()">ADD</button>
 
 </div>
