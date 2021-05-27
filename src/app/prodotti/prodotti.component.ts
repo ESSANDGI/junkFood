@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PRODOTTI } from '../Mock_elencoProdotti';
 import { CATEGORIE } from '../Mock_categorieProdotti';
+import { Prodotto } from '../prodotto';
 
 @Component({
   selector: 'app-prodotti',
@@ -34,7 +35,7 @@ export class ProdottiComponent implements OnInit {
     return e.getTipo() === "sfiziosita";
   })
 
-  faicose(categoria: string):void{
+  stampaCategoria(categoria: string):void{
     if(categoria === "Tutti i prodotti")
       this.Mock_ElencoProdotti = PRODOTTI;
     else
@@ -61,6 +62,11 @@ export class ProdottiComponent implements OnInit {
         }
       }
   }
+
+  aggiungiSuCarrello(prodotto : Prodotto){
+    alert("ho aggiunto a carrello!");
+  }
+
   ngOnInit(): void {
     
   }
