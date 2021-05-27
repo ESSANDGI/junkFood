@@ -60,6 +60,7 @@
 .span-nome-prodotto{
     margin: 0 auto;
     vertical-align:top;
+    text-align: center;
     // font-family: ???;
     // font-size: ??;
 }
@@ -78,4 +79,8 @@
 
 .button-aggiungi-prodotto:hover{
     background-color: #E5383B;
+}
+
+.span-button-aggiungi-prodotto{
+    color: ivory;
 }
