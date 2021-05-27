@@ -34,7 +34,35 @@ export class ProdottiComponent implements OnInit {
     return e.getTipo() === "sfiziosita";
   })
 
+  faicose(categoria: string):void{
+    if(categoria === "Tutti i prodotti")
+      this.Mock_ElencoProdotti = PRODOTTI;
+    else
+      switch(categoria){
+        case "Salse":{
+          this.Mock_ElencoProdotti = this.Mock_ElencoSalse;
+          break;
+        }
+        case "Bibite":{
+          this.Mock_ElencoProdotti = this.Mock_ElencoBibite;
+          break;
+        }
+        case "Insalate":{
+          this.Mock_ElencoProdotti = this.Mock_ElencoInsalate;
+          break;
+        }
+        case "Panini":{
+          this.Mock_ElencoProdotti = this.Mock_ElencoPanini;
+          break;
+        }
+        case "Sfiziosità":{
+          this.Mock_ElencoProdotti = this.Mock_ElencoSifiozita;
+          break;
+        }
+      }
+  }
   ngOnInit(): void {
+    
   }
 
 }

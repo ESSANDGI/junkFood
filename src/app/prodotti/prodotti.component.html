@@ -2,7 +2,7 @@
     <!-- con il codice sotto la visualizzazione dei bottoni per le categorie è dinamica in base a quanti 
     elementi sono contenuti in Mock_ElencoCategorie -->
     <div class="div-elenco-categorie">
-        <button class="button-seleziona-categoria" *ngFor="let categoria of Mock_ElencoCategorie">
+        <button class="button-seleziona-categoria" *ngFor="let categoria of Mock_ElencoCategorie" (click)="faicose(categoria)">
             <span class="span-categoria"><b>{{categoria}}</b></span> 
         </button>
     </div>
