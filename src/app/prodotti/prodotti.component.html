@@ -12,7 +12,7 @@
     <div class="div-elenco-prodotti">
         <div class="div-prodotto" *ngFor="let prodotto of Mock_ElencoProdotti">
             <span class="span-nome-prodotto">{{prodotto.getName()}}</span> 
-            <img [src]="prodotto.getBlob()" [alt]="prodotto.getName()">
+            <img class="img-prodotto" [src]="prodotto.getBlob()" [alt]="prodotto.getName()">
                 <button class="button-aggiungi-prodotto">
                     <span class="span-button-aggiungi-prodotto">aggiungi</span> 
                 </button>   
