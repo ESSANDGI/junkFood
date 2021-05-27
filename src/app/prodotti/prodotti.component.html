@@ -11,10 +11,11 @@
     presenti in Mock_ElencoProdotti -->
     <div class="div-elenco-prodotti">
         <div class="div-prodotto" *ngFor="let prodotto of Mock_ElencoProdotti" >
+            <span class="span-nome-prodotto">{{prodotto.getName()}}</span> 
             <img [src]="prodotto.getBlob()" [alt]="prodotto.getName()">
-            <button class="button-aggiungi-prodotto">
-                <span class="badge">{{prodotto.getName()}}</span> 
-            </button>
+                <button class="button-aggiungi-prodotto">
+                    <span>aggiungi al carrello</span> 
+                </button>   
         </div>
     </div>
 </div>
