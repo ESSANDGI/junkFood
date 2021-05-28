@@ -1,120 +1,91 @@
-.container{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    height: 100%;
-    grid-template-columns: repeat(4, 270px);
-    grid-template-rows: repeat(5, 270px) ;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-.prodotto{
+.container-component-prodotti{
+    width: 90%;
+    height: auto;
+    // background-color: rgb(180, 201, 219);
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+}
+//---------Inizio tutto Categorie
+.div-elenco-categorie{
+    width: 20%;
+    height: auto;
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px; //mi serve per avere distanziare il div dal logo in alto
+    padding-bottom: 20px;
 }
 
-.prodotto:first-child{
-    background-image: url(img/121_medium_US_en.png);
-    background-position: center;
+.button-seleziona-categoria{
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 7px 7px 7px 7px;
+    background-color: #F5F3F4
 }
 
-.prodotto:nth-child(2){
-    background-image: url(img/123_medium_US_en.png);
-    background-position: center;
+.button-seleziona-categoria:hover{
+    background-color: #D3D3D3
+}
+.span-categoria{
+    font-size: 1em;
+}
+//----------Fine Tutto Categorie
+//----------Inizio Tutto Prodotti
+.div-elenco-prodotti{
+    width: 80%;
+    padding: 20px;
+    height: auto;
+    // background-color: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; //questo serve per vedere l'elenco stile grid
 }
 
-.prodotto:nth-child(3){
-    background-image: url(img/898_medium_US_en.png);
-    background-position: center;
+.div-prodotto{
+    width: 15%;
+    height: 200px;
+    border-color: black;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 10px;
+    margin: 2px;
+    // background-color: blueviolet;
+    display: flex;
+    flex-direction:column;
+    position: relative; //mi è servito per rendere il bottone posizionato in basso
+    min-width: 100px;
 }
 
-.prodotto:nth-child(4){
-    background-image: url(img/897_medium_US_en.png);
-    background-position: center;
+.span-nome-prodotto{
+    height: 25%;
+    margin: 0 auto;
+    vertical-align:top;
+    text-align: center;
+    // font-family: ???;
+    // font-size: ??;
 }
 
-.prodotto:nth-child(5){
-    background-image: url(img/129_medium_US_en.png);
-    background-position: center;
+.button-aggiungi-prodotto{
+    width: 80%;
+    height: 25%;
+    margin: 10%;
+    margin-top: 10px;
+    border-radius: 7px ;
+    background-color:  #BA181B;
+    position: absolute; //
+    bottom: 0;          // mi sono serviti entrambi per mettere in bottone in basso 
+                        // assieme al position: relative; di .div-prodotto
 }
 
-.prodotto:nth-child(6){
-    background-image: url(img/130_medium_US_en.png);
-    background-position: center;
+.button-aggiungi-prodotto:hover{
+    background-color: #E5383B;
 }
 
-.prodotto:nth-child(7){
-    background-image: url(img/305_medium_US_en.png);
-    background-position: center;
+.span-button-aggiungi-prodotto{
+    color: ivory;
 }
 
-.prodotto:nth-child(8){
-    background-image: url(img/128_medium_US_en.png);
-    background-position: center;
-}
-
-.prodotto:nth-child(9){
-    background-image: url(img/125_medium_US_en.png);
-    background-position: center;
-}
-
-.prodotto:nth-child(10){
-    background-image: url(img/896_medium_US_en.png);
-    background-position: center;
-}
-
-.prodotto:nth-child(11){
-    background-image: url(img/893_medium_US_en.png);
-    background-position: center;
-}
-
-.prodotto:nth-child(12){
-    background-image: url(img/124_medium_US_en.png);
-    background-position: center;
-}
-
-.prodotto:nth-child(13){
-    background-image: url(img/131_medium_US_en.png);
-    background-position: center;
-}
-
-.prodotto:nth-child(14){
-    background-image: url(img/127_medium_US_en.png);
-    background-position: center;
-}
-
-.prodotto:nth-child(15){
-    background-image: url(img/895_medium_US_en.png);
-    background-position: center;
-}
-
-.prodotto:nth-child(16){
-    background-image: url(img/126_medium_US_en.png);
-    background-position: center;
-}
-
-.prodotto:nth-child(17){
-    background-image: url(img/894_medium_US_en.png);
-    background-position: center;
-}
-
-.prodotto:nth-child(18){
-    background-image: url(img/1236_medium_US_en.png);
-    background-position: center;
-}
-
-.prodotto:nth-child(19){
-    background-image: url(img/lto_placeholder.png);
-    background-position: center;
-    background-size: cover;
-    grid-column: span 2
-
-}
-
-// .prodotto:nth-child(20){
-//     background-image: url(img/896_medium_US_en.png);
-//     // background-position: center;
-//     grid-column: span 2
-// }

@@ -12,5 +12,8 @@ export class SideNavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+<<<<<<< HEAD
   showFiller = false;
+=======
+>>>>>>> main
 }

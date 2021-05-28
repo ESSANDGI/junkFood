@@ -17,12 +17,17 @@ import { RigaDivisaIn2Component } from './home/riga-divisa-in2/riga-divisa-in2.c
 import { FacebookShareComponent } from './footer/facebook-share/facebook-share.component';
 import { TwitterShareComponent } from './footer/twitter-share/twitter-share.component';
 import { InstagramShareComponent } from './footer/instagram-share/instagram-share.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatRippleModule } from '@angular/material/core';
+<<<<<<< HEAD
 import { SideNavComponent } from './side-nav/side-nav.component';
+=======
+import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
+>>>>>>> main
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { ProdottiComponent } from './prodotti/prodotti.component';
 
@@ -41,6 +46,10 @@ import { ProdottiComponent } from './prodotti/prodotti.component';
     FacebookShareComponent,
     TwitterShareComponent,
     InstagramShareComponent,
+<<<<<<< HEAD
+=======
+    ChiSiamoComponent,
+>>>>>>> main
     SideNavComponent,
     ProdottiComponent
   ],

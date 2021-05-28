@@ -1,31 +1,24 @@
+<div class="container-component-prodotti">
+    <!-- con il codice sotto la visualizzazione dei bottoni per le categorie è dinamica in base a quanti 
+    elementi sono contenuti in Mock_ElencoCategorie -->
+    <div class="div-elenco-categorie">
+        <button class="button-seleziona-categoria" *ngFor="let categoria of Mock_ElencoCategorie" (click)="stampaCategoria(categoria)">
+            <span class="span-categoria"><b>{{categoria}}</b></span> 
+        </button>
+    </div>
 
-
-<div class="container">
-
-    <!-- 5 righe 4 colonne -->
-    <div class="prodotto uno">1</div>
-    <div class="prodotto due">2</div>
-    <div class="prodotto tre">3</div>
-    <div class="prodotto quattro">4</div>
-
-    <div class="prodotto cinque">5</div>
-    <div class="prodotto sei">6</div>
-    <div class="prodotto sette">7</div>
-    <div class="prodotto otto">8</div>
-
-    <div class="prodotto nove">9</div>
-    <div class="prodotto dieci">10</div>
-    <div class="prodotto undici">11</div>
-    <div class="prodotto dodici">12</div>
-
-    <div class="prodotto tredici">13</div>
-    <div class="prodotto quattordici">14</div>
-    <div class="prodotto quindici">15</div>
-    <div class="prodotto sedici">16</div>
-
-    <div class="prodotto diciassette">17</div>
-    <div class="prodotto diciotto">18</div>
-    <div class="prodotto diciannove">19</div>
-    <div class="prodotto venti">20</div>
-
+    <!-- con il codice sotto la visualizzazione dei prodotti è dinamica in base a quanti sono i prodotti 
+    presenti in Mock_ElencoProdotti -->
+    <div class="div-elenco-prodotti">
+        <div class="div-prodotto" *ngFor="let prodotto of Mock_ElencoProdotti">
+            <span class="span-nome-prodotto">{{prodotto.getName()}}</span> 
+            <img class="img-prodotto" [src]="prodotto.getBlob()" [alt]="prodotto.getName()">
+            <button class="button-aggiungi-prodotto" (click)="aggiungiSuCarrello(prodotto)">
+                <span class="span-button-aggiungi-prodotto">aggiungi</span> 
+            </button>   
+        </div>
+    </div>
+    
 </div>
+
+
