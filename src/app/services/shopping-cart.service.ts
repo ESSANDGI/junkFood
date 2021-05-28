@@ -8,7 +8,7 @@ export class ShoppingCartService {
 
   constructor() { }
 
-  shoppingCart : ShoppingCart = new ShoppingCart([]);
+  shoppingCart : ShoppingCart = new ShoppingCart();
 
   //Instanziazione singola grazie al servizio
   getCartInstance() : ShoppingCart {

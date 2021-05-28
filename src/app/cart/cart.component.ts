@@ -1,5 +1,7 @@
+import { fakeObject } from './../shared/fakeObjects';
 import { ShoppingCartService } from './../services/shopping-cart.service';
 import { Component, OnInit } from '@angular/core';
+import { Prodotto } from '../shared/Prodotto';
 
 @Component({
   selector: 'app-cart',
@@ -8,10 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
 
+  products : Prodotto[];
+  subtotal : number;
+
   //Ad ogni caricamento della pagina va ad aggiungere all'array products i prodotti effettivamente all'interno della classe ShoppingCart
   constructor(private cartService : ShoppingCartService) {
-    this.cartService.getCartInstance().addToCart(Math.random());
+    //this.cartService.getCartInstance().addToCart(Math.random());
     this.products = this.cartService.getCartInstance().getProducts();
+
     console.log(this.products); //debug
 
     this.subtotal = this.cartService.getCartInstance().getSubtotal();
@@ -20,11 +26,7 @@ export class CartComponent implements OnInit {
   //Inizializza oggetto carrello e suoi prodotti
   ngOnInit(): void {}
 
-  products : number[];
-
-  subtotal : number;
-
-  deleteProduct(product : number) {
+  deleteProduct(product : Prodotto) {
 
     this.cartService.getCartInstance().removeFromCart(product);
 
@@ -32,7 +34,8 @@ export class CartComponent implements OnInit {
 
   addProduct() {
 
-    this.cartService.getCartInstance().addToCart(Math.random());
+    let random = Math.floor(Math.random() * 20);
+    this.cartService.getCartInstance().addToCart(fakeObject[random]);
 
   }
 

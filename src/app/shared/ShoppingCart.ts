@@ -1,33 +1,38 @@
+import { Prodotto } from './Prodotto';
 
 export class ShoppingCart {
 
-  private productsArray : number[];
+  private productsArray : Prodotto[];
   private subtotal : number;
   
-  constructor(products : number[]) {
-    this.productsArray = products;
+  constructor() {
+    this.productsArray = [];
     this.subtotal = 0;
   }
 
   //Metodo che aggiunge un prodotto al carrello
-  addToCart(prodotto : number) {
+  addToCart(prodotto : Prodotto) {
     this.productsArray.push(prodotto);
     console.log("aggiunto un prodotto");
   }
 
   //Metodo che rimuove dall'array prodotti ciò che si vuole togliere
-  removeFromCart(prodotto : number) {
+  removeFromCart(prodotto : Prodotto) {
     this.productsArray.splice(this.productsArray.indexOf(prodotto), 1);
   }
 
   //Ritorna l'array di prodotti all'interno del carrello
-  getProducts() : number[] {
+  getProducts() : Prodotto[] {
     return this.productsArray;
   }
 
-  getSubtotal() : number {  //DA GESTIRE TUTTO CIO
+  getSubtotal() : number {
+    this.subtotal = 0;
 
-    return 100;
+    this.productsArray.forEach(product => {
+      this.subtotal += product.getPrice();
+    });
+    return this.subtotal;
   }
 
 }

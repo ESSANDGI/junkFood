@@ -11,7 +11,10 @@
         <div *ngFor="let product of products">
     
             <div class="productContainer">
-                <p>{{product}}</p> <!-- product.name -->
+                <p>{{product.getName()}}</p> <!-- product.name -->
+                <p>{{product.getPrice()}}</p>
+                <p>{{product.getType()}}</p>
+                <!-- <p>{{product.}}</p> -->
                 <img src="../../assets/img_home/panino-spongebob.png" alt="productImg"> <!-- product.img -->
                 <button (click)="deleteProduct(product)">DELETE</button>
                 <mat-divider></mat-divider>

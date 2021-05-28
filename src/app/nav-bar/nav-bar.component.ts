@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ShoppingCartService } from '../services/shopping-cart.service'
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  productIntoCart : number;
 
+  constructor(private cartService : ShoppingCartService) {
 
+    this.productIntoCart = this.cartService.getCartInstance().getProducts().length;
+    console.log(this.productIntoCart);
+
+  }
 
   ngOnInit(): void {
   }
@@ -25,6 +31,8 @@ export class NavBarComponent implements OnInit {
     image.src = "../../assets/menu-img/logo-bianco-e-nero.png";
     // img.src = "../../assets/menu-img/logo-bianco-e-nero-sangue.png";
   }
+
+
 
   // showSideNav() {
 
