@@ -4,12 +4,15 @@
 }
 
 .container-component-prodotti{
-    width: 90%;
+    width: 100%;
     height: auto;
     // background-color: rgb(180, 201, 219);
     margin: 0 auto;
+    padding-top: 1rem ;
     display: flex;
     flex-direction: row;
+    font-family: "burgerFont";
+
 }
 //---------Inizio tutto Categorie
 .div-elenco-categorie{
@@ -24,7 +27,7 @@
 
 .button-seleziona-categoria{
     width: 80%;
-    height: 50px;
+    height: 5rem;
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -36,7 +39,7 @@
     background-color: #D3D3D3
 }
 .span-categoria{
-    font-size: 1em;
+    font-size: 1.2em;
 }
 //----------Fine Tutto Categorie
 //----------Inizio Tutto Prodotti
@@ -77,6 +80,11 @@
 
 .img-prodotto{
     width: 180px;
+    transition: all 0.7s ease;
+}
+
+.div-prodotto:hover  .img-prodotto{
+    transform: scale(1.25); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .span-nome-prodotto{
@@ -98,7 +106,6 @@
     margin: 10%;
     margin-top: 10px;
     border-radius: 0.5rem ;
-    font-family: "burgerFont";
     // background-color:  #BA181B;
     position: absolute; //
     bottom: 0;          // mi sono serviti entrambi per mettere in bottone in basso 
@@ -117,6 +124,8 @@
     border-radius: 0.5rem;
     border-color: #161A1D;
     background-color: #161A1D !important;
+    cursor: pointer;
     
 }
+
 
