@@ -25,6 +25,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatRippleModule } from '@angular/material/core';
 import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { ProdottiComponent } from './prodotti/prodotti.component';
 
 
  
@@ -42,7 +43,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     TwitterShareComponent,
     InstagramShareComponent,
     ChiSiamoComponent,
-    SideNavComponent
+    SideNavComponent,
+    ProdottiComponent
   ],
   imports: [
     BrowserModule,

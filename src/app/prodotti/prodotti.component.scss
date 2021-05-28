@@ -1,0 +1,90 @@
+.container-component-prodotti{
+    width: 90%;
+    height: auto;
+    // background-color: rgb(180, 201, 219);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+//---------Inizio tutto Categorie
+.div-elenco-categorie{
+    width: 20%;
+    height: auto;
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px; //mi serve per avere distanziare il div dal logo in alto
+    padding-bottom: 20px;
+}
+
+.button-seleziona-categoria{
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 7px 7px 7px 7px;
+    background-color: #F5F3F4
+}
+
+.button-seleziona-categoria:hover{
+    background-color: #D3D3D3
+}
+.span-categoria{
+    font-size: 1em;
+}
+//----------Fine Tutto Categorie
+//----------Inizio Tutto Prodotti
+.div-elenco-prodotti{
+    width: 80%;
+    padding: 20px;
+    height: auto;
+    // background-color: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; //questo serve per vedere l'elenco stile grid
+}
+
+.div-prodotto{
+    width: 15%;
+    height: 200px;
+    border-color: black;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 10px;
+    margin: 2px;
+    // background-color: blueviolet;
+    display: flex;
+    flex-direction:column;
+    position: relative; //mi è servito per rendere il bottone posizionato in basso
+    min-width: 100px;
+}
+
+.span-nome-prodotto{
+    height: 25%;
+    margin: 0 auto;
+    vertical-align:top;
+    text-align: center;
+    // font-family: ???;
+    // font-size: ??;
+}
+
+.button-aggiungi-prodotto{
+    width: 80%;
+    height: 25%;
+    margin: 10%;
+    margin-top: 10px;
+    border-radius: 7px ;
+    background-color:  #BA181B;
+    position: absolute; //
+    bottom: 0;          // mi sono serviti entrambi per mettere in bottone in basso 
+                        // assieme al position: relative; di .div-prodotto
+}
+
+.button-aggiungi-prodotto:hover{
+    background-color: #E5383B;
+}
+
+.span-button-aggiungi-prodotto{
+    color: ivory;
+}
