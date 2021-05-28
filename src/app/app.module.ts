@@ -24,7 +24,9 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatRippleModule } from '@angular/material/core';
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatBadgeModule } from '@angular/material/badge';
 
 
  
@@ -54,7 +56,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatButtonModule,
     MatIconModule,
     MatRippleModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatDividerModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

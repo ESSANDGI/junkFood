@@ -2,10 +2,11 @@
 export class ShoppingCart {
 
   private productsArray : number[];
-  //Somma prezzo
+  private subtotal : number;
   
   constructor(products : number[]) {
     this.productsArray = products;
+    this.subtotal = 0;
   }
 
   //Metodo che aggiunge un prodotto al carrello
@@ -22,6 +23,11 @@ export class ShoppingCart {
   //Ritorna l'array di prodotti all'interno del carrello
   getProducts() : number[] {
     return this.productsArray;
+  }
+
+  getSubtotal() : number {  //DA GESTIRE TUTTO CIO
+
+    return 100;
   }
 
 }

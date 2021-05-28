@@ -1,3 +1,4 @@
+
 .header {
     height: 100px;
     width: 100%;
@@ -14,6 +15,7 @@
     // height: 100%;
     width: 100%;
     margin-top: 99px;
+    min-height: 60%;
     // background-color: green;
     // border: 2px solid black;
     display: block;
@@ -27,7 +29,17 @@
     // border: 2px solid black;
     display: block;
     // position: fixed;
+    // position: absolute;
+    // bottom: 0;
+    // width: 100%;
 }
+
+// #footer {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     height: 2.5rem;            /* Footer height */
+//   }
 
 // .side-nav {
 //     margin-top: 99px;

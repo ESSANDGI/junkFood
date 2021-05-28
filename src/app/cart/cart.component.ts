@@ -13,12 +13,16 @@ export class CartComponent implements OnInit {
     this.cartService.getCartInstance().addToCart(Math.random());
     this.products = this.cartService.getCartInstance().getProducts();
     console.log(this.products); //debug
+
+    this.subtotal = this.cartService.getCartInstance().getSubtotal();
   }
 
   //Inizializza oggetto carrello e suoi prodotti
   ngOnInit(): void {}
 
   products : number[];
+
+  subtotal : number;
 
   deleteProduct(product : number) {
 
@@ -31,5 +35,12 @@ export class CartComponent implements OnInit {
     this.cartService.getCartInstance().addToCart(Math.random());
 
   }
+
+  //Calcola il totale, ogni volta che viene richiamata, andando a sommare i prezzi dei prodotti presenti nell'array (MAP?) products
+  // calcSubtotal() : number {
+
+  //   return this.products
+
+  // }
 
 }

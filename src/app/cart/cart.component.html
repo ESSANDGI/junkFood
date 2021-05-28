@@ -1,12 +1,26 @@
 
-<div class="container">
-
-    <!-- div uguale ad ogni prodotto -->
-    <div *ngFor="let product of products">
-        <p>{{product}}</p>
-        <button (click)="deleteProduct(product)">DELETE</button>
+<div class="cart-container">
+    <div class="title">
+        <p class="textTitle">RIEPILOGO CARRELLO</p>
     </div>
+    <div class="container">
 
-    <button (click)="addProduct()">ADD</button>
+        <button (click)="addProduct()">ADD</button>
+    
+        <!-- div uguale ad ogni prodotto -->
+        <div *ngFor="let product of products">
+    
+            <div class="productContainer">
+                <p>{{product}}</p> <!-- product.name -->
+                <img src="../../assets/img_home/panino-spongebob.png" alt="productImg"> <!-- product.img -->
+                <button (click)="deleteProduct(product)">DELETE</button>
+                <mat-divider></mat-divider>
+            </div>
+        </div>
 
+    </div>
+    <div class="subtotal">
+        <p class="textSubtotal">TOTALE: {{subtotal}}</p>
+    </div>
 </div>
+
