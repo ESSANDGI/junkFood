@@ -3,6 +3,5 @@ export const CATEGORIE: string[] = [
     "Panini",
     "Insalate",
     "Bibite",
-    "Sfiziosità",
-    "Bibite"
+    "Sfiziosità"
 ]

@@ -57,9 +57,11 @@
     display: flex;
     flex-direction:column;
     position: relative; //mi è servito per rendere il bottone posizionato in basso
+    min-width: 100px;
 }
 
 .span-nome-prodotto{
+    height: 25%;
     margin: 0 auto;
     vertical-align:top;
     text-align: center;
@@ -69,7 +71,7 @@
 
 .button-aggiungi-prodotto{
     width: 80%;
-    height: 50px;
+    height: 25%;
     margin: 10%;
     margin-top: 10px;
     border-radius: 7px ;
