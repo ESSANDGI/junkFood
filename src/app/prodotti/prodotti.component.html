@@ -11,14 +11,16 @@
     presenti in Mock_ElencoProdotti -->
     <div class="div-elenco-prodotti">
         <!-- *ngFor crea per ogni elemento dentro l'array Mock_ElencoProdotti un div contenente tutto -->
-        <div class="div-prodotto" *ngFor="let prodotto of Mock_ElencoProdotti">
-            <span class="span-nome-prodotto">{{prodotto.getName()}}</span> 
+        <div class="div-prodotto" *ngFor="let prodotto of Mock_ElencoProdotti" (mouseenter)="changeToButton(prodotto)" (mouseleave)="changeToNormal(prodotto)"  >
             <div class="div-immagine-prodotto">
                 <img class="img-prodotto" [src]="prodotto.getBlob()" [alt]="prodotto.getName()">
             </div>
-            <button class="button-aggiungi-prodotto" (click)="aggiungiSuCarrello(prodotto)">
-                <span class="span-button-aggiungi-prodotto">aggiungi</span> 
-            </button>   
+            <div class="div-nome-button-aggiungi-prodotto" (click)="aggiungiSuCarrello(prodotto)">
+                <!-- <span class="span-nome-prodotto">{{prodotto.getName()}}</span>  -->
+                <div id="{{prodotto.getName()}}">{{prodotto.getName()}}</div> 
+                <!-- <span class="span-button-aggiungi-prodotto">aggiungi</span>  -->
+
+            </div>   
         </div>
     </div>
     

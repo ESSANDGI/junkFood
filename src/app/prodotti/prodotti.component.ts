@@ -63,6 +63,21 @@ export class ProdottiComponent implements OnInit {
       }
   }
 
+  changeToButton(prodotto: Prodotto) {
+    let divButton = document.getElementById(prodotto.getName()) as HTMLDivElement;
+    divButton.textContent = "aggiungi";
+    divButton.classList.add("div-bottone")
+    
+    // img.src = "../../assets/menu-img/logo-bianco-e-nero-sangue.png";
+  }
+
+  changeToNormal(prodotto: Prodotto) {
+    let divButton = document.getElementById(prodotto.getName()) as HTMLDivElement;
+    divButton.textContent = prodotto.getName();
+    divButton.classList.remove("div-bottone")
+
+  }
+
   aggiungiSuCarrello(prodotto : Prodotto){
     alert("ho aggiunto a carrello!");
   }
