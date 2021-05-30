@@ -12,7 +12,7 @@ export class NavBarComponent implements OnInit {
 
   constructor(private cartService : ShoppingCartService) {
 
-    this.productIntoCart = this.cartService.getCartInstance().getProducts().length;
+    this.productIntoCart = this.cartService.getCartInstance().getProducts().size;
     console.log(this.productIntoCart);
 
   }

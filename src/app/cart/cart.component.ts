@@ -10,7 +10,7 @@ import { Prodotto } from '../shared/Prodotto';
 })
 export class CartComponent implements OnInit {
 
-  products : Prodotto[];
+  products : Map<Prodotto, number>;
   subtotal : number;
 
   //Ad ogni caricamento della pagina va ad aggiungere all'array products i prodotti effettivamente all'interno della classe ShoppingCart
@@ -20,7 +20,7 @@ export class CartComponent implements OnInit {
 
     console.log(this.products); //debug
 
-    this.subtotal = this.cartService.getCartInstance().getSubtotal();
+    this.subtotal = this.calcSubtotal();
   }
 
   //Inizializza oggetto carrello e suoi prodotti
@@ -32,7 +32,7 @@ export class CartComponent implements OnInit {
 
   }
 
-  addProduct() {
+  addProduct() {  //funzione per testarlo
 
     let random = Math.floor(Math.random() * 20);
     this.cartService.getCartInstance().addToCart(fakeObject[random]);
@@ -40,10 +40,10 @@ export class CartComponent implements OnInit {
   }
 
   //Calcola il totale, ogni volta che viene richiamata, andando a sommare i prezzi dei prodotti presenti nell'array (MAP?) products
-  // calcSubtotal() : number {
+  calcSubtotal() : number {
 
-  //   return this.products
+    return this.cartService.getCartInstance().getSubtotal();
 
-  // }
+  }
 
 }
