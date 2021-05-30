@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ShoppingCartService } from '../services/shopping-cart.service'
+import { Prodotto } from '../shared/Prodotto';
 
 @Component({
   selector: 'app-nav-bar',
@@ -32,6 +33,12 @@ export class NavBarComponent implements OnInit {
     // img.src = "../../assets/menu-img/logo-bianco-e-nero-sangue.png";
   }
 
+  //temporanea pee simulare
+  addProduct(prodotto: Prodotto) {  //funzione per testarlo
+
+    this.cartService.getCartInstance().addToCart(prodotto);
+
+  }
 
 
   // showSideNav() {

@@ -32,10 +32,9 @@ export class CartComponent implements OnInit {
 
   }
 
-  addProduct() {  //funzione per testarlo
+  addProduct(prodotto: Prodotto) {  //funzione per testarlo
 
-    let random = Math.floor(Math.random() * 20);
-    this.cartService.getCartInstance().addToCart(fakeObject[random]);
+    this.cartService.getCartInstance().addToCart(prodotto);
 
   }
 
