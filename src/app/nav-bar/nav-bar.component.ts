@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ShoppingCartService } from '../services/shopping-cart.service'
+import { Prodotto } from '../shared/Prodotto';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,7 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  productIntoCart : number;
+
+  constructor(private cartService : ShoppingCartService) {
+
+    this.productIntoCart = this.cartService.getCartInstance().getProducts().size;
+    console.log(this.productIntoCart);
+
+  }
 
   ngOnInit(): void {
   }
@@ -24,9 +33,26 @@ export class NavBarComponent implements OnInit {
     // img.src = "../../assets/menu-img/logo-bianco-e-nero-sangue.png";
   }
 
+  //temporanea pee simulare
+  addProduct(prodotto: Prodotto) {  //funzione per testarlo
+
+    this.cartService.getCartInstance().addToCart(prodotto);
+
+  }
+
+
   // showSideNav() {
 
   // }
+
+  /*//Nel momento in cui l'utente aggiunge al carrello un prodotto richiama questa funzione la quale visualizza il badge sull'icona carrello
+    toggleCartBadge() {
+
+
+
+    }
+  
+  */
 
 
 

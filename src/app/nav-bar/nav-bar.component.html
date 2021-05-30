@@ -10,8 +10,8 @@
         <div class="menuButton" matRipple [matRippleCentered]="true" routerLink="/prodotti"> PRODOTTI </div>
         <div class="menuButton" matRipple [matRippleCentered]="true"> CONTATTACI </div>
         <div class="menuButton" matRipple [matRippleCentered]="true"> TROVACI </div>
-        <button class="cart-cont" mat-fab color="black" aria-label="Example icon button with a plus one icon"> <!--(click)="drawer.toggle()"-->
-            <mat-icon class="cart">shopping_cart</mat-icon>
+        <button routerLink="/shopping-cart" class="cart-cont" mat-fab color="black" aria-label="Example icon button with a plus one icon"> <!--(click)="drawer.toggle()"-->
+            <mat-icon class="cart" matBadge="{{productIntoCart}}" matBadgeOverlap="false">shopping_cart</mat-icon>
         </button>
     </div>
 

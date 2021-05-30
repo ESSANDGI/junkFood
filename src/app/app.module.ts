@@ -13,19 +13,21 @@ import { CarouselComponent } from './home/carousel/carousel.component';
 import { PrimoSloganComponent } from './home/primo-slogan/primo-slogan.component';
 import { RigaDivisaIn2Component } from './home/riga-divisa-in2/riga-divisa-in2.component';
 
-
 import { FacebookShareComponent } from './footer/facebook-share/facebook-share.component';
 import { TwitterShareComponent } from './footer/twitter-share/twitter-share.component';
 import { InstagramShareComponent } from './footer/instagram-share/instagram-share.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
+import { CartComponent } from './cart/cart.component';
 
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatRippleModule } from '@angular/material/core';
-import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
-import {MatSidenavModule} from '@angular/material/sidenav';
 import { ProdottiComponent } from './prodotti/prodotti.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatBadgeModule } from '@angular/material/badge';
 
 
  
@@ -44,7 +46,8 @@ import { ProdottiComponent } from './prodotti/prodotti.component';
     InstagramShareComponent,
     ChiSiamoComponent,
     SideNavComponent,
-    ProdottiComponent
+    ProdottiComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +58,9 @@ import { ProdottiComponent } from './prodotti/prodotti.component';
     MatButtonModule,
     MatIconModule,
     MatRippleModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatDividerModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

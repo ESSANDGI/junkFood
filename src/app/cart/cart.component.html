@@ -1,0 +1,41 @@
+
+<div class="cart-container">
+    <div class="title">
+        <p class="textTitle">RIEPILOGO CARRELLO</p>
+    </div>
+    <div class="container">
+    
+        <!-- div uguale ad ogni prodotto -->
+        <div *ngFor="let product of products | keyvalue">
+    
+            <div class="productContainer">
+                <div class="description">
+                    <img src="../../assets/img_home/panino-spongebob.png" alt="productImg"> <!--"{{product.key.getBlob()}}"-->
+                    <p>{{product.key.getName()}} | {{product.key.getPrice()}} $</p> <br>
+                </div>
+                    
+                <p>{{product.key.getType()}}</p> 
+
+                <div class="quantity-delete">
+                    <!-- <p>{{product.value}}</p>     Nient'altro che il numero di prodotti di quel tipo presente nel carrello -->
+
+                    <button class="buttons" (click)="addProduct(product.key)" mat-raised-button color="accent">-</button>
+
+                    <button class="buttons" mat-raised-button color="accent">{{product.value}}</button>
+
+                    <button class="buttons" (click)="addProduct(product.key)" mat-raised-button color="accent">+</button>
+
+                    <button class="del-buttons" mat-mini-fab (click)="deleteProduct(product.key)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </div>
+                <mat-divider></mat-divider>
+            </div>
+        </div>
+
+    </div>
+    <div class="subtotal">
+        <p class="textSubtotal">TOTALE: {{calcSubtotal() | number : '1.0-2'}} $</p>  <!-- pipe per formattare a deguatamente i numeri visualizzati -->
+    </div>
+</div>
+
