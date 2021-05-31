@@ -6,6 +6,7 @@ export class Prodotto{
     }
 
     getBlob(){
+        console.log(this.urlPath);
         return this.urlPath;
     }
 

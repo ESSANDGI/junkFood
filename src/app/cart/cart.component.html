@@ -4,22 +4,36 @@
         <p class="textTitle">RIEPILOGO CARRELLO</p>
     </div>
     <div class="container">
+        
+        <!-- <div *ngIf = "productsCount === 0"> CART IS EMPTY </div> -->
+
+        <!-- STRANO CHE NON LO  -->
+        <div *ngIf="productsCount === 0; then thenBlock"></div>
+        <ng-template #thenBlock>CART IS EMPTY
+
+
+
+
+        </ng-template>
     
         <!-- div uguale ad ogni prodotto -->
         <div *ngFor="let product of products | keyvalue">
     
             <div class="productContainer">
                 <div class="description">
-                    <img src="../../assets/img_home/panino-spongebob.png" alt="productImg"> <!--"{{product.key.getBlob()}}"-->
-                    <p>{{product.key.getName()}} | {{product.key.getPrice()}} $</p> <br>
+                    <div class="immagine-prodotto">
+                        <img src={{product.key.getBlob()}} alt="productImg"> <!--"{{product.key.getBlob()}}"-->
+                    </div>
+                    <div class="real-description">
+                        <p style="padding-top: 20px;">{{product.key.getName()}}</p> <br>
+                        <p>{{product.key.getPrice()}} $</p>
+                    </div>
                 </div>
-                    
-                <p>{{product.key.getType()}}</p> 
 
                 <div class="quantity-delete">
                     <!-- <p>{{product.value}}</p>     Nient'altro che il numero di prodotti di quel tipo presente nel carrello -->
 
-                    <button class="buttons" (click)="deleteProduct(product.key)" mat-raised-button color="accent">-</button>
+                    <button class="buttons" (click)="substractProduct(product.key)" mat-raised-button color="accent">-</button>
 
                     <button class="buttons" mat-raised-button color="accent">{{product.value}}</button>
 

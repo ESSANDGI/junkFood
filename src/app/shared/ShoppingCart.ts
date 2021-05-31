@@ -13,15 +13,15 @@ export class ShoppingCart {
   //  =  <prodotto1, 2>, <prodotto2, 1>, <prodotto3, 6>, <prodotto4, 4>, <prodotto5, 1>
 
   //Metodo che aggiunge un prodotto al carrello
-  addToCart(prodotto : Prodotto) {
+  addToCart(product : Prodotto) {
 
-    if(this.productMap.has(prodotto)) {
-      this.productMap.set(prodotto, this.getProductCount(prodotto) + 1);
+    if(this.productMap.has(product)) {
+      this.productMap.set(product, this.getProductCount(product) + 1);
       console.log("aggiunto un prodotto che già era presente");
     }
     else {
       console.log("nuovo prodotto");
-      this.productMap.set(prodotto, 1);
+      this.productMap.set(product, 1);
     }
   }
 
@@ -41,10 +41,25 @@ export class ShoppingCart {
 
 
   //Metodo che rimuove dall'array prodotti ciò che si vuole togliere. Viene tolto tutto l'oggetto, indipendentemente dalla quantità
-  removeFromCart(prodotto : Prodotto) {
-    this.productMap.delete(prodotto);
+  removeFromCart(product : Prodotto) {
+    this.productMap.delete(product);
     console.log("rimosso un prodotto");
     // this.productMap.splice(this.productMap.indexOf(prodotto), 1);
+  }
+
+  //Sottrae un solo tipo di prodotto, 
+  substractProduct(product: Prodotto) {
+    var count = this.getProductCount(product);
+
+    if(count > 1) {
+      this.productMap.set(product, this.getProductCount(product) - 1);
+    }
+    else if(count === 1){
+      this.removeFromCart(product);
+    }
+    else {   //Se il prodotto non esiste, anche se in realtà non dovrebbe mai essere possibile un acosa del genere
+      console.log("Elemento undefined, prodotto inesistente");
+    }
   }
 
   //Nuovo funzione minus

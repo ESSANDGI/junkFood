@@ -84,6 +84,10 @@
     transition: all 0.5s ease;
 }
 
+.real-description {
+    flex-direction: column;
+}
+
 .div-prodotto:hover  .img-prodotto{
     transform: scale(1.25); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

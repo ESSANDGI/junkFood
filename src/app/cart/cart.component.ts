@@ -12,11 +12,13 @@ export class CartComponent implements OnInit {
 
   products : Map<Prodotto, number>;
   subtotal : number;
+  productsCount : number;
 
   //Ad ogni caricamento della pagina va ad aggiungere all'array products i prodotti effettivamente all'interno della classe ShoppingCart
   constructor(private cartService : ShoppingCartService) {
     //this.cartService.getCartInstance().addToCart(Math.random());
     this.products = this.cartService.getCartInstance().getProducts();
+    this.productsCount = this.products.size;
 
     console.log(this.products); //debug
 
@@ -29,12 +31,19 @@ export class CartComponent implements OnInit {
   deleteProduct(product : Prodotto) {
 
     this.cartService.getCartInstance().removeFromCart(product);
+    this.productsCount = this.products.size;  //Perchè c'è il rischio che si svuoti completamente il carrello, e questa variabile deve essere aggiornata
 
   }
 
-  addProduct(prodotto: Prodotto) {  //funzione per testarlo
+  addProduct(product: Prodotto) {  //funzione per testarlo
 
-    this.cartService.getCartInstance().addToCart(prodotto);
+    this.cartService.getCartInstance().addToCart(product);
+
+  }
+
+  substractProduct(product: Prodotto) {
+
+    this.cartService.getCartInstance().substractProduct(product);
 
   }
 
