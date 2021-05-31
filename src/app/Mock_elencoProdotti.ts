@@ -1,4 +1,4 @@
-import { Prodotto } from "./prodotto";
+import { Prodotto } from "./shared/Prodotto";
 export const PRODOTTI : Prodotto[] = [
     new Prodotto("panino","Big Bro","../../assets/prodotti/panini/big-bro_isolated.png",5.69),
     new Prodotto("panino","Loco Burger","../../assets/prodotti//panini/burger-isolated.png",5.50),

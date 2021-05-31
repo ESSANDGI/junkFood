@@ -56,9 +56,19 @@ export class ShoppingCart {
     this.subtotal = 0;
 
     for (let key of this.productMap.keys()) {
-      this.subtotal += key.getPrice() * this.getProductCount(key);   //Facendo così 
+      this.subtotal += key.getPrice() * this.getProductCount(key);   
     }
     
     return this.subtotal;
   }
+
+  getArrayOfProducts() : Prodotto[] {
+
+    var array : Prodotto[] = [];
+    for (let key of this.productMap.keys()) {
+      array.push(key);   
+    }
+
+    return array;
+  } 
 }

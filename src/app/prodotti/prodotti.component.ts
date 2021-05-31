@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { PRODOTTI } from '../Mock_elencoProdotti';
 import { CATEGORIE } from '../Mock_categorieProdotti';
-import { Prodotto } from '../prodotto';
+import { Prodotto } from '../shared/Prodotto';
+import { ShoppingCartService } from '../services/shopping-cart.service'
 
 @Component({
   selector: 'app-prodotti',
@@ -10,29 +11,32 @@ import { Prodotto } from '../prodotto';
 })
 export class ProdottiComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cartService : ShoppingCartService) {
+    this.Mock_ElencoProdotti = PRODOTTI;  //this.cartService.getCartInstance().getArrayOfProducts()
+    // this.Mock_ElencoProdotti = this.cartService.getCartInstance().getProducts();
+   }
   
   Mock_ElencoCategorie = CATEGORIE;
-  Mock_ElencoProdotti = PRODOTTI;
+  Mock_ElencoProdotti : Prodotto[] = [];
   
   Mock_ElencoPanini = this.Mock_ElencoProdotti.filter(e => {
-     return e.getTipo() === "panino";
+     return e.getType() === "panino";
   })
 
   Mock_ElencoBibite = this.Mock_ElencoProdotti.filter(e => {
-    return e.getTipo() === "bibita";
+    return e.getType() === "bibita";
   })
 
   Mock_ElencoInsalate = this.Mock_ElencoProdotti.filter(e => {
-    return e.getTipo() === "insalata";
+    return e.getType() === "insalata";
   })
 
   Mock_ElencoSalse = this.Mock_ElencoProdotti.filter(e => {
-    return e.getTipo() === "salsa";
+    return e.getType() === "salsa";
   })
 
   Mock_ElencoSifiozita = this.Mock_ElencoProdotti.filter(e => {
-    return e.getTipo() === "sfiziosita";
+    return e.getType() === "sfiziosita";
   })
 
   stampaCategoria(categoria: string):void{
@@ -65,6 +69,7 @@ export class ProdottiComponent implements OnInit {
 
   aggiungiSuCarrello(prodotto : Prodotto){
     alert("ho aggiunto a carrello!");
+    this.cartService.getCartInstance().addToCart(prodotto);
   }
 
   ngOnInit(): void {
