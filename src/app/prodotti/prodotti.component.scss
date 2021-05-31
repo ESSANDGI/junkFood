@@ -1,10 +1,18 @@
+@font-face {
+    font-family: 'burgerFont';
+    src: url('../../assets/Insanibc.ttf') format('truetype');
+}
+
 .container-component-prodotti{
-    width: 90%;
+    width: 100%;
     height: auto;
     // background-color: rgb(180, 201, 219);
     margin: 0 auto;
+    padding-top: 1rem ;
     display: flex;
     flex-direction: row;
+    font-family: "burgerFont";
+
 }
 //---------Inizio tutto Categorie
 .div-elenco-categorie{
@@ -19,7 +27,7 @@
 
 .button-seleziona-categoria{
     width: 80%;
-    height: 50px;
+    height: 5rem;
     margin: 0 auto;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -31,7 +39,8 @@
     background-color: #D3D3D3
 }
 .span-categoria{
-    font-size: 1em;
+    font-size: 1.2em;
+    letter-spacing: 0.5px;
 }
 //----------Fine Tutto Categorie
 //----------Inizio Tutto Prodotti
@@ -46,8 +55,8 @@
 }
 
 .div-prodotto{
-    width: 15%;
-    height: 200px;
+    width: 23%;
+    height: 315px;
     border-color: black;
     border-style:solid;
     border-width: 1px;
@@ -57,11 +66,30 @@
     display: flex;
     flex-direction:column;
     position: relative; //mi è servito per rendere il bottone posizionato in basso
-    min-width: 100px;
+    min-width: 190px;
+    font-size: 1.3rem;
+}
+
+
+.div-immagine-prodotto{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.img-prodotto{
+    width: 180px;
+    transition: all 0.5s ease;
+}
+
+.div-prodotto:hover  .img-prodotto{
+    transform: scale(1.25); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .span-nome-prodotto{
-    height: 25%;
+    
     margin: 0 auto;
     vertical-align:top;
     text-align: center;
@@ -69,22 +97,36 @@
     // font-size: ??;
 }
 
-.button-aggiungi-prodotto{
+.div-nome-button-aggiungi-prodotto{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
-    height: 25%;
+    height: 30%;
     margin: 10%;
     margin-top: 10px;
-    border-radius: 7px ;
-    background-color:  #BA181B;
+    border-radius: 0.5rem ;
+    // background-color:  #BA181B;
     position: absolute; //
     bottom: 0;          // mi sono serviti entrambi per mettere in bottone in basso 
                         // assieme al position: relative; di .div-prodotto
+    
 }
 
-.button-aggiungi-prodotto:hover{
-    background-color: #E5383B;
+.div-bottone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    border-color: #161A1D;
+    background-color: #161A1D !important;
+    cursor: pointer;
+    
 }
 
-.span-button-aggiungi-prodotto{
-    color: ivory;
-}
+
