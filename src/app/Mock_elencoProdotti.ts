@@ -23,6 +23,7 @@ export const PRODOTTI : Prodotto[] = [
     new Prodotto("bibita","Sprite","../../assets/prodotti/bibite/sprite-logo-isolated.png",3.6),
     new Prodotto("bibita","Succo Mela","../../assets/prodotti/bibite/succo-mela_isolated.png",3.6),
     new Prodotto("bibita","Tropicana","../../assets/prodotti/bibite/tropicana-isolated.png",3.6),
+    new Prodotto("insalata","BANANA","../../assets/prodotti/panini/Banana-Single.jpg",5.69),
     new Prodotto("insalata","Insalata Mista","../../assets/prodotti/insalate/insalata-mista-isolated.png",3.6),
     new Prodotto("insalata","Insalata Pollo Croccante","../../assets/prodotti/insalate/insalata-pollo-croccante-isolated.png",3.6),
     new Prodotto("insalata","Insalata Pollo Grigliato","../../assets/prodotti/insalate/insalata-pollo-grigliato-isolated.png",3.6),
