@@ -11,13 +11,10 @@ import { ShoppingCartService } from '../services/shopping-cart.service'
 })
 export class ProdottiComponent implements OnInit {
 
-  constructor(private cartService : ShoppingCartService) {
-    this.Mock_ElencoProdotti = PRODOTTI;  //this.cartService.getCartInstance().getArrayOfProducts()
-    // this.Mock_ElencoProdotti = this.cartService.getCartInstance().getProducts();
-   }
+  constructor(private cartService : ShoppingCartService) {}
   
   Mock_ElencoCategorie = CATEGORIE;
-  Mock_ElencoProdotti : Prodotto[] = [];
+  Mock_ElencoProdotti : Prodotto[] = PRODOTTI;
   
   Mock_ElencoPanini = this.Mock_ElencoProdotti.filter(e => {
      return e.getType() === "panino";
